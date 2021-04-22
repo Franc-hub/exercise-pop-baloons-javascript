@@ -3,9 +3,11 @@
 let ballonsMap = ['green', 'yellow', 'black', 'brown', 'white', 'green', 'blue', 'red', 'pink', 'purple', 
 'green', 'yellow', 'black', 'brown', 'white', 'green', 'blue', 'red', 'pink', 'purple'];
 
+
 // poping a balloon is basically turning his color to null (no color)
 const popBalloon = (position) => {
     // set the color to null on the balloon position
+
     render();
 }
 
@@ -13,8 +15,12 @@ const render = () => {
 
     // convert ballons map of colors into real html balloons
     const ballons = ballonsMap.map((color, position) => {
+            if(color === "yellow")
+            ballonsMap.find()
+      getElementbyClassName (balloon.style.background = ballonsMap [Math.floor(Math.random() * 2)]);
+
         return `<div class="balloon active"></div>`; // <--- render each balloon
-    });
+    };
 
 
     document.querySelector("#balloon-count").innerHTML = ballons.filter(b => b !== null).length; // <-- render the balloon count into the DOM
