@@ -13,13 +13,9 @@ const render = () => {
 
     // convert ballons map of colors into real html balloons
     const ballons = ballonsMap.map((color, position) => {
-        const filterColor = ballonsMap.filter(())
-    // let changeColor = 
-    //     if(color === 'yellow'){
-    //         document.getElementsByClassName("balloon")
-    //     }
         return `<div class="balloon active"></div>`; // <--- render each balloon
     });
+
 
     document.querySelector("#balloon-count").innerHTML = ballons.filter(b => b !== null).length; // <-- render the balloon count into the DOM
     document.querySelector("#balloon-map").innerHTML = ballons.join(''); // <-- render the balloons into the DOM
